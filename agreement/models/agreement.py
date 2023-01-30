@@ -37,9 +37,7 @@ class Agreement(models.Model):
         template = self.env.ref('agreement.mail_template_agreement_mail', raise_if_not_found=False)
         print(template)
         print(self.author_id)
-        print(8888888)
         if template:
-            print(55555555)
             template.send_mail(self.author_id.id, force_send=True)
         self.state = 'active'
         return True
