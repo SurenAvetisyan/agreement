@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem name="Agreement" id="agreement_agreement_menu" web_icon="agreement,static/src/images/icon.png"
+              sequence="0"/>
+    <menuitem name="Contract" id="agreement_contract_menu" sequence="1" parent="agreement.agreement_agreement_menu"/>
+    <menuitem name="Settings" id="agreement_settings_menu" sequence="2" action="agreement.agreement_types_action"
+              parent="agreement.agreement_agreement_menu"/>
+</odoo>
